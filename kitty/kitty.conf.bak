@@ -1,0 +1,6 @@
+# BEGIN_KITTY_THEME
+include current-theme.conf
+
+# Keybindings
+map ctrl+enter send_text all nvim\n
+
