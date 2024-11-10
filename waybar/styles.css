@@ -1,0 +1,17 @@
+window{
+  background-color:rgba(27,4,72,0.9);
+}
+#cpu, #memory, #clock, #temperature{
+  color:rgba(0,0,0,1);
+  padding-left:10px;
+  padding-right:10px;
+  font-weight:bold;
+  font-size:18px;
+color:#e81870;
+
+}
+#cpu{
+  color:#e81870;
+}
+#memory{
+}

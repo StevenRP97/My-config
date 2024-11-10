@@ -1,10 +1,11 @@
 {
-  "position":"top",
+    //"style":"~/.config/waybar/styles.css",
+    "position":"top",
     "height":30,
 
     "modules-left":[
       "hyprland/window",
-    "pulseaudio"
+      "pulseaudio"
     ],
 
     "modules-center":[
@@ -20,8 +21,8 @@
     ],
 
     // Here I'll have some format stuff
-    "cpu":{
-      "format":"{}% CPU"
+    "cpu": {
+      "format": "{}% CPU"
     },
     "pulseaudio": {
       "format": "{volume}% {icon} {format_source}",
