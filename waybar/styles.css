@@ -1,17 +1,39 @@
 window{
-  background-color:rgba(27,4,72,0.9);
+  background-color:rgba(0,0,0,0);
 }
-#cpu, #memory, #clock, #temperature{
+/* Styling for the window title module */
+#window {
+  background-color: #2e3440;    /* Set background color */
+  color: #eceff4;               /* Set text color */
+  font-size: 14px;              /* Adjust font size */
+  padding: 5px 10px;            /* Add padding */
+  border-radius: 10px;          /* Rounded corners */
+  border: 1px solid #4c566a;    /* Add border */
+}
+
+#cpu, #memory, #clock, #temperature, #pulseaudio, #battery, #workspaces{
   color:rgba(0,0,0,1);
   padding-left:10px;
   padding-right:10px;
   font-weight:bold;
   font-size:18px;
-color:#e81870;
-
-}
-#cpu{
   color:#e81870;
 }
-#memory{
+
+.modules-left, .modules-right {
+    border-radius: 10px;
+    background-color: #1e1e2e;  /* Adjust color */
+    padding: 5px 10px;  /* Inner spacing */
+    margin: 5px;  /* Outer spacing */
 }
+
+/* Center section with different styling */
+.modules-center {
+    border-radius: 15px;
+    background-color: #313244;  /* Adjust color */
+    padding: 8px 12px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+

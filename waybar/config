@@ -1,21 +1,21 @@
 {
-    //"style":"~/.config/waybar/styles.css",
-    "position":"top",
+  "position":"top",
     "height":30,
 
     "modules-left":[
-      "hyprland/window",
-      "pulseaudio"
+      "clock#date",
+    "clock"
     ],
 
     "modules-center":[
-      "clock",
-      "cpu",
-      "memory",
-      "temperature"
+      "pulseaudio",
+    "cpu",
+    "memory",
+    "temperature"
     ],
 
     "modules-right":[
+      "hyprland/window",
       "battery",
       "hyprland/workspaces"
     ],
@@ -23,6 +23,12 @@
     // Here I'll have some format stuff
     "cpu": {
       "format": "{}% CPU"
+    },
+    "clock":{
+      "format":"{:%I:%M %p}"
+    },
+    "clock#date":{
+      "format":"{:%A, %B %d}"
     },
     "pulseaudio": {
       "format": "{volume}% {icon} {format_source}",
@@ -44,5 +50,15 @@
     },
     "memory":{
       "format":"{}% RAM"
+    },
+    "hyprland/window":{
+      "disable-scroll":true,
+      "all-outputs":true,
+      "warp-on-scroll":false,
+      "format":"{name}: {icon}",
+      "format-icons":{
+        "active":"0",
+        "default":"o"
+      }
     }
 }
